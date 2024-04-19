@@ -33,62 +33,16 @@
                 <!-- /input button -->
                 <!-- list -->
                 <ul class="task-list">
-                    <li class="precedents">&#10148; <strong>TASK PRECEDENTI</strong>
-                        <ul>
-                            <li class="task-box">
-                                <span class="check done">&check;</span>
-                                <span class="message">Quarterly Newsletter</span>
-                                <span class="editorial">Editorial</span>
-                            </li>
-                        </ul>
-                    </li>
                     <li class="precedents">&#10148; <strong>OGGI</strong>
                         <ul>
-                            <li class="task-box">
+                            <li class="task-box" v-for="curItem in todo.item">
                                 <span class="check done">&check;</span>
-                                <span class="message">Recruiting blog post</span>
-                                <span class="editorial">Editorial</span>
-                            </li>
-                            <li class="task-box">
-                                <span class="check done">&check;</span>
-                                <span class="message">Mobile app luaunch</span>
-                                <span class="goals">Q1 Goals</span>
-                            </li>
-                            <li class="task-box">
-                                <span class="check undone">&cross;</span>
-                                <span>Interview John H.</span>
-                                <span class="recruiting">Recruiting</span>
-                            </li>
-                            <li class="task-box">
-                                <span class="check done">&check;</span>
-                                <span class="message">Summit update to mobile storefronts</span>
-                                <span class="mobile">Mobile</span>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="precedents">&#10148; <strong>PROSSIMI GIORNI</strong>
-                        <ul>
-                            <li class="task-box">
-                                <span class="check undone">&check;</span>
-                                <span>Schedule meeting with Alex</span>
-                            </li>
-                            <li class="task-box">
-                                <span class="check done">&check;</span>
-                                <span class="message">Homepage refreshh</span>
-                                <span class="website">Website</span>
-                            </li>
-                            <li class="task-box">
-                                <span class="check done">&check;</span>
-                                <span class="message">Onboard new Sales team members</span>
-                                <span class="sale">Sale</span>
-                            </li>
-                            <li class="task-box">
-                                <span class="check done">&check;</span>
-                                <span class="message">Review editorial calendar</span>
+                                <span :class="curItem.done === true ? `message`: curItem.text">{{ curItem.text }}</span>
                                 <span class="editorial">Editorial</span>
                             </li>
                         </ul>
                     </li>
+                    
                 </ul>
                 <!-- /list -->
             </div>

@@ -98,6 +98,7 @@ ul {
     font-size: 15px;
     background-color: rgb(23, 170, 245);
     color: white;
+    margin-left: 10px;
 }
 .goals {
     border-radius: 25px;
