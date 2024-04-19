@@ -1,0 +1,143 @@
+/* reset */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* header */
+.header {
+    background-color: #edf2f6;
+    text-align: center;
+    margin-bottom: 40px;
+  
+}
+/* main */
+/* container */
+.container {
+    background-color: #edf2f6;
+    width: 850px;
+    margin: 40px auto;
+    text-align: center;
+    border-radius: 10px;
+    padding-bottom: 10px;
+}
+/* input button */
+.input-button {
+    padding: 20px;
+    border-bottom: 1px solid white;
+}
+.search {
+    padding: 5px;
+    border: 1px solid black;
+    border-color: lightgrey;
+    margin: 0 auto;
+    width: 250px;
+    height: 30px;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.add-task {
+   border: 0;
+   background-color: #17aaf5; 
+   width: 100px;
+   height: 30px;
+   color: white;
+   border-radius: 5px;
+}
+/* /input button */
+/* list */
+
+ul {
+    list-style-type: none;
+    text-align: left;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+.task-list {
+    margin: 40px 40px;
+}
+.precedents {
+    padding-bottom: 30px;
+    color: rgba(0, 0, 0, 0.7);
+}
+.task-box {
+    background-color: white;
+    line-height: 35px;
+    padding: 0 20px;
+    margin: 10px 0;
+    border-radius: 5px;
+    color: grey;
+}
+.check {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    line-height: 15px;
+    text-align: center;
+    font-size: 10px;
+    vertical-align: middle;
+}
+
+.done {
+    color: rgb(114, 207, 186);
+    border: 1px solid rgb(114, 207, 186);
+}
+.message {
+    text-decoration: line-through;
+    font-size: 15px;
+}
+.editorial {
+    border-radius: 25px;
+    padding: 5px 10px;
+    font-size: 15px;
+    background-color: rgb(23, 170, 245);
+    color: white;
+}
+.goals {
+    border-radius: 25px;
+    padding: 5px 10px;
+    font-size: 15px;
+    background-color: #ab5de6;
+    color: white;
+}
+
+.undone {
+    color: red;
+    border: 1px solid red; 
+}
+.recruiting {
+    border-radius: 25px;
+    padding: 5px 10px;
+    font-size: 15px;
+    color: white;
+    background-color: #2ac6ab;
+}
+.mobile {
+    border-radius: 25px;
+    padding: 5px 10px;
+    font-size: 15px;
+    background-color: orange;
+    color: white;
+}
+.website {
+    border-radius: 25px;
+    padding: 5px 10px;
+    font-size: 15px;
+    color: white;
+    background-color: #ec499d;
+}
+.sale {
+    border-radius: 25px;
+    padding: 5px 10px;
+    font-size: 15px;
+    color: white;
+    background-color: #a2d115; 
+}
+/* /list */
+/* /main */

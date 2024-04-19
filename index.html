@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toboolist</title>
+
+    <!-- style -->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- vue js -->
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+</head>
+
+<body>
+    <div id="app">
+        <!-- header -->
+        <div class="header">
+            <header>
+                <img class="logo" src="./img/logo.png" alt="logo">
+            </header>
+        </div>
+        <!-- /header -->
+        <!-- main -->
+        <main>
+            <div class="container">
+                <!-- input button -->
+                <div class="input-button">
+                    <input class="search" type="text" placeholder="es. Fare la spesa...">
+                    <button class="add-task">Add Task</button>
+                </div>
+                <!-- /input button -->
+                <!-- list -->
+                <ul class="task-list">
+                    <li class="precedents">&#10148; <strong>TASK PRECEDENTI</strong>
+                        <ul>
+                            <li class="task-box">
+                                <span class="check done">&check;</span>
+                                <span class="message">Quarterly Newsletter</span>
+                                <span class="editorial">Editorial</span>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="precedents">&#10148; <strong>OGGI</strong>
+                        <ul>
+                            <li class="task-box">
+                                <span class="check done">&check;</span>
+                                <span class="message">Recruiting blog post</span>
+                                <span class="editorial">Editorial</span>
+                            </li>
+                            <li class="task-box">
+                                <span class="check done">&check;</span>
+                                <span class="message">Mobile app luaunch</span>
+                                <span class="goals">Q1 Goals</span>
+                            </li>
+                            <li class="task-box">
+                                <span class="check undone">&cross;</span>
+                                <span>Interview John H.</span>
+                                <span class="recruiting">Recruiting</span>
+                            </li>
+                            <li class="task-box">
+                                <span class="check done">&check;</span>
+                                <span class="message">Summit update to mobile storefronts</span>
+                                <span class="mobile">Mobile</span>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="precedents">&#10148; <strong>PROSSIMI GIORNI</strong>
+                        <ul>
+                            <li class="task-box">
+                                <span class="check undone">&check;</span>
+                                <span>Schedule meeting with Alex</span>
+                            </li>
+                            <li class="task-box">
+                                <span class="check done">&check;</span>
+                                <span class="message">Homepage refreshh</span>
+                                <span class="website">Website</span>
+                            </li>
+                            <li class="task-box">
+                                <span class="check done">&check;</span>
+                                <span class="message">Onboard new Sales team members</span>
+                                <span class="sale">Sale</span>
+                            </li>
+                            <li class="task-box">
+                                <span class="check done">&check;</span>
+                                <span class="message">Review editorial calendar</span>
+                                <span class="editorial">Editorial</span>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <!-- /list -->
+            </div>
+
+        </main>
+        <!-- /main -->
+    </div>
+    <!-- scipt -->
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
