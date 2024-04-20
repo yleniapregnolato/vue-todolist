@@ -27,8 +27,8 @@
             <div class="container">
                 <!-- input button -->
                 <div class="input-button">
-                    <input class="search" type="text" placeholder="es. Fare la spesa...">
-                    <button class="add-task">Add Task</button>
+                    <input class="search" type="text" placeholder="es. Fare la spesa..." v-model="todo.newItem.text">
+                    <button class="add-task" @click="addItems">Add Task</button>
                 </div>
                 <!-- /input button -->
                 <!-- list -->
